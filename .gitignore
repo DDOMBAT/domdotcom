@@ -1,0 +1,31 @@
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Hugo build output
+/public/
+/resources/_gen/
+/hugo_stats.json
+
+# Node modules (if using npm/yarn for themes or tooling)
+/node_modules/
+
+# Optional: ignore dependency files
+package-lock.json
+yarn.lock
+
+# Optional: ignore config files for deployment tools (uncomment as needed)
+# .netlify/
+# netlify.toml
+
+# VS Code settings
+.vscode/
+
+# Hugo themes (if using as a Git submodule, you may want to ignore it)
+# themes/*
+
+# Backup files
+*.bak
+*.swp
+*~
+
