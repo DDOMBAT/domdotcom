@@ -3,3 +3,5 @@ languageCode = 'en-us'
 title = 'DOMDOTCOM: A REFUGE FOR IDEAS'
 theme = "ananke"
 contentDir = "content"
+
+markup.goldmark.renderer.unsafe = true

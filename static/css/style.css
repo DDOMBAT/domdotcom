@@ -11,6 +11,12 @@
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+.homepage .statement {
+  font-style: italic;
+  display: block;
+  margin-bottom: 2rem;
+}
+
 /* Main big titles (h1) */
 .homepage h1 {
   margin-bottom: 3rem;
