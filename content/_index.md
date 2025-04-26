@@ -1,15 +1,11 @@
 ---
 title: "Welcome to DomDotCom"
 ---
-
 <!-- # DomDotCom -->
-
-
-
-→ [View Portfolio](/portfolio/)
+<!-- → [View Portfolio](/portfolio/)
 → [Read Field Notes](/blog/)
 → [Learn About Me](/about/)
-→ [Get in Touch](/contact/)
+→ [Get in Touch](/contact/) -->
 
 <span class="statement">
 An experimental studio of fabrication, code, and ideas.
