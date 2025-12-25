@@ -1,0 +1,38 @@
+{{/*
+Shortcode: {{< lightbox id="optional-id" >}}
+ - If used in a page bundle (content/portfolio/ with images), it lists images in that bundle.
+ - Optional param `id` sets data-gallery id for multiple galleries.
+ - Optional param `images="img1.jpg,img2.png"` to list specific resource basenames (comma-separated).
+*/}}
+
+{{ $galleryID := .Get "id" | default "gallery" }}
+{{ $imagesParam := .Get "images" }}
+{{ $resources := slice }}
+
+{{ if $imagesParam }}
+  {{ range (split $imagesParam ",") }}
+    {{ $name := trim . " " }}
+    {{ with $.Page.Resources.GetMatch $name }}
+      {{ $resources = $resources | append . }}
+    {{ end }}
+  {{ end }}
+{{ else }}
+  {{/* try common image patterns first */}}
+  {{ $resources = $.Page.Resources.Match "*.{jpg,jpeg,png,gif,webp}" }}
+  {{ if eq (len $resources) 0 }}
+    {{ $resources = $.Page.Resources.ByType "image" }}
+  {{ end }}
+{{ end }}
+
+{{ if not (gt (len $resources) 0) }}
+  <p><em>No images found for the gallery. Put images in the page bundle (same folder as this page) or pass images=\"name.jpg\"</em></p>
+{{ else }}
+  <div class="gallery-grid">
+  {{ range $i, $img := $resources }}
+    {{ $thumb := $img.Fit "600x400" }}
+    <a href="{{ $img.Permalink }}" class="glightbox" data-gallery="{{ $galleryID }}" data-type="image" title="{{ $img.Name }}">
+      <img src="{{ $thumb.RelPermalink }}" alt="{{ $img.Name }}">
+    </a>
+  {{ end }}
+  </div>
+{{ end }}

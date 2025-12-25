@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>{{ .Title }}</title>
   <link rel="stylesheet" href="/css/style.css">
+  {{ partial "lightbox_head.html" . }}
 </head>
 <body>
 
@@ -26,5 +27,6 @@
     </main>
   </div>
 
+  {{ partial "lightbox_scripts.html" . }}
 </body>
 </html>
