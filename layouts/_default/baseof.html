@@ -4,12 +4,19 @@
   <meta charset="UTF-8">
   <title>{{ .Title }}</title>
   <link rel="stylesheet" href="/css/style.css">
+
+  <!-- favicon: will use /favicon.svg if present, fallback to /favicon.ico -->
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="alternate icon" href="/favicon.ico">
 </head>
 <body>
 
-  <div class="site-header">
-    DomDotCom
-  </div>
+  <header class="site-header">
+    <a href="/" class="brand">
+      <img src="/images/DOM-LOGO-2.svg" alt="DomDotCom" class="site-logo" />
+      <!--<span class="sr-only">DomDotCom</span> -->
+    </a>
+  </header>
 
   <div class="container">
     <nav class="sidebar">
