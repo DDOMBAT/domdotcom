@@ -1,32 +1,34 @@
-/* Styles only for the homepage graphic view */
-html, body {
-  height: 100%;
-  margin: 0;
-  background: #fff;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.home-only, .home-graphic {
+.home-hero {
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
-  box-sizing: border-box;
 }
 
 .home-graphic img {
-  max-width: 80vw;
-  max-height: 80vh;
-  width: auto;
+  width: min(90vw, 900px); /* was ~320px before, now ~3×–4× bigger */
   height: auto;
-  display: block;
+  margin-bottom: 3rem;
 }
 
-/* If you want the logo smaller on mobile, tweak with a media query */
-@media (max-width: 640px) {
-  .home-graphic img {
-    max-width: 90vw;
-    max-height: 60vh;
-  }
+/* inline menu */
+.home-menu {
+  display: flex;
+  gap: 3rem; /* give the items breathing room */
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.home-menu a {
+  font-size: 2rem;       /* was 0.8rem */
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 0.3rem;
+}
+
+.home-menu a:hover {
+  border-bottom-color: currentColor;
 }
