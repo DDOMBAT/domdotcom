@@ -1,9 +1,28 @@
 {{ define "main" }}
   <!-- home-specific styles -->
-  <link rel="stylesheet" href="/css/home.css">
+  <link rel="stylesheet" href="{{ "css/home.css" | relURL }}">
 
-  <div class="home-graphic">
-    <!-- reuse existing logo in /static/images/DOM-LOGO-2.svg -->
-    <img src="/images/DOM-LOGO-2.svg" alt="DomDotCom" />
-  </div>
+  <section class="home-hero">
+    <div class="home-graphic">
+      <!-- reuse existing logo in /static/images/DOM-LOGO-2.svg -->
+      <img src="{{ "images/DOM-LOGO-2.svg" | relURL }}" alt="DomDotCom" />
+    </div>
+
+    <!-- inline menu under the splash -->
+    <nav class="home-menu">
+      {{/* OPTION A: use Hugo's main menu items from config */}}
+      {{ if .Site.Menus.main }}
+        {{ range .Site.Menus.main }}
+          <a href="{{ .URL | relURL }}">{{ .Name }}</a>
+        {{ end }}
+      {{ else }}
+      {{/* OPTION B: fallback hard-coded links if you don't have menus set */}}
+        <a href="{{ "work" | relURL }}">Work</a>
+        <a href="{{ "writing" | relURL }}">Writing</a>
+        <a href="{{ "projects" | relURL }}">Projects</a>
+        <a href="{{ "about" | relURL }}">About</a>
+        <a href="{{ "contact" | relURL }}">Contact</a>
+      {{ end }}
+    </nav>
+  </section>
 {{ end }}
