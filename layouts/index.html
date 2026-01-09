@@ -17,11 +17,10 @@
         {{ end }}
       {{ else }}
       {{/* OPTION B: fallback hard-coded links if you don't have menus set */}}
-        <a href="{{ "work" | relURL }}">Work</a>
-        <a href="{{ "writing" | relURL }}">Writing</a>
-        <a href="{{ "projects" | relURL }}">Projects</a>
-        <a href="{{ "about" | relURL }}">About</a>
-        <a href="{{ "contact" | relURL }}">Contact</a>
+        <a href="{{ "Home" | relURL }}">Home</a>
+        <a href="{{ "Portfolio" | relURL }}">Portfolio</a>
+        <a href="{{ "Consulting" | relURL }}">Consulting</a>
+        <a href="{{ "Contact" | relURL }}">Contact</a>
       {{ end }}
     </nav>
   </section>
