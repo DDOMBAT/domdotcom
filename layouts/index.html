@@ -1,9 +1,9 @@
 {{ define "main" }}
- <link rel="stylesheet" href="/css/style.css">
-  <main class="homepage" style="padding-top: 5rem;padding-left: 1rem;">
-    <!-- <h1 style="margin-bottom: 2rem; margin-left: 5rem;">DomDotCom</h1> -->
+  <!-- home-specific styles -->
+  <link rel="stylesheet" href="/css/home.css">
 
-    {{ .Content }}
-
-  </main>
+  <div class="home-graphic">
+    <!-- reuse existing logo in /static/images/DOM-LOGO-2.svg -->
+    <img src="/images/DOM-LOGO-2.svg" alt="DomDotCom" />
+  </div>
 {{ end }}

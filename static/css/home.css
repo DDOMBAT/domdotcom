@@ -1,0 +1,32 @@
+/* Styles only for the homepage graphic view */
+html, body {
+  height: 100%;
+  margin: 0;
+  background: #fff;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.home-only, .home-graphic {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.home-graphic img {
+  max-width: 80vw;
+  max-height: 80vh;
+  width: auto;
+  height: auto;
+  display: block;
+}
+
+/* If you want the logo smaller on mobile, tweak with a media query */
+@media (max-width: 640px) {
+  .home-graphic img {
+    max-width: 90vw;
+    max-height: 60vh;
+  }
+}
