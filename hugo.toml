@@ -3,7 +3,7 @@ languageCode = 'en-us'
 title = 'DOMDOTCOM: A REFUGE FOR IDEAS'
 theme = "ananke"
 contentDir = "content"
-publishDir = "docs"
+publishDir = "public"
 markup.goldmark.renderer.unsafe = true
 
 [caches]
