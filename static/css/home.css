@@ -1,0 +1,34 @@
+.home-hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-graphic img {
+  width: min(90vw, 900px); /* was ~320px before, now ~3×–4× bigger */
+  height: auto;
+  margin-bottom: 3rem;
+}
+
+/* inline menu */
+.home-menu {
+  display: flex;
+  gap: 3rem; /* give the items breathing room */
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.home-menu a {
+  font-size: 2rem;       /* was 0.8rem */
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 0.3rem;
+}
+
+.home-menu a:hover {
+  border-bottom-color: currentColor;
+}

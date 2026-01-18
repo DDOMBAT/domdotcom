@@ -3,5 +3,9 @@ languageCode = 'en-us'
 title = 'DOMDOTCOM: A REFUGE FOR IDEAS'
 theme = "ananke"
 contentDir = "content"
-
+publishDir = "public"
 markup.goldmark.renderer.unsafe = true
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
