@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>{{ .Title }}</title>
   <link rel="stylesheet" href="/css/style.css">
-
+  {{ partial "lightbox_head.html" . }}
   <!-- favicon: will use /favicon.svg if present, fallback to /favicon.ico -->
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="alternate icon" href="/favicon.ico">
@@ -43,5 +43,6 @@
     </div>
   {{ end }}
 
+  {{ partial "lightbox_scripts.html" . }}
 </body>
 </html>
