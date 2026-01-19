@@ -1,6 +1,17 @@
 <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
 <style>
 /* simple gallery grid */
+
+/* debug: ensure GLightbox overlay shows title/description */
+.glightbox-container .gtitle,
+.glightbox-container .gdesc,
+.glightbox-container .gdesc p {
+  display: block !important;
+  color: #fff !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
 .gallery-grid{
   display:grid;
   grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
@@ -31,6 +42,7 @@
 
 /* caption overlay */
 .gallery-grid .caption{
+  font-style: italic;
   position:absolute;
   left:0;
   right:0;
