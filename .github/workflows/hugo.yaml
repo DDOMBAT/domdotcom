@@ -84,9 +84,7 @@ jobs:
             --gc \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/" \
-            --cacheDir "${{ runner.temp }}/hugo_cache" \ 
-      	    --buildDrafts \
-      	    --buildFuture	
+            --cacheDir "${{ runner.temp }}/hugo_cache"
       - name: Cache save
         if: false
         id: cache-save
