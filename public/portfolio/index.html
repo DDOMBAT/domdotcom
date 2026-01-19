@@ -37,12 +37,12 @@
 
     <div class="container">
       <nav class="sidebar">
-        <a href="/" class="nav-link">Home</a>
-        <a href="/portfolio/" class="nav-link">Portfolio</a>
-        <a href="/fieldnotes/" class="nav-link">Field Notes</a>
-        <a href="/consulting/" class="nav-link">Consulting</a>
-        <a href="/about/" class="nav-link">About</a>
-        <a href="/contact/" class="nav-link">Contact</a>
+        <a href="{{ "home" | relURL }}">Home</a>
+        <a href="{{ "portfolio" | relURL }}" class="nav-link">Portfolio</a>
+        <a href="{{ "consulting" | relURL }}" class="nav-link">Field Notes</a>
+        <a href="{{ "fieldnotes" | relURL }}" class="nav-link">Consulting</a>
+        <a href="{{ "about" | relURL }}" class="nav-link">About</a>
+        <a href="{{ "contact" | relURL }}" class="nav-link">Contact</a>
       </nav>
 
       <main class="homepage">
