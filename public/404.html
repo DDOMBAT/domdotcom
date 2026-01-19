@@ -3,7 +3,7 @@
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="UTF-8">
   <title>404 Page not found</title>
-  <link rel="stylesheet" href="/css/style.css">
+ <link rel="stylesheet" href="/css/style.css">
   <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
 <style>
  
@@ -12,17 +12,56 @@
   grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
   gap:12px;
   margin-top: 1rem;
+  padding: 0;
+}
+.gallery-grid a{
+  display:block;
+  position:relative;
+  overflow:hidden;
+  border-radius:4px;
+  text-decoration: none;
+  color: inherit;
 }
 .gallery-grid a img{
   width:100%;
   height:auto;
   display:block;
   object-fit:cover;
-  border-radius:4px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  transition: transform 0.35s ease;
+}
+
+ 
+.gallery-grid a:hover img{
+  transform: scale(1.04);
+}
+
+ 
+.gallery-grid .caption{
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  padding:.6rem .8rem;
+  background: linear-gradient(0deg, rgba(0,0,0,0.6), rgba(0,0,0,0.35));
+  color:#fff;
+  font-size:0.95rem;
+  transform:translateY(100%);
+  transition: transform 0.22s ease;
+  line-height:1.2;
+  pointer-events:none;
+}
+
+.gallery-grid a:hover .caption,
+.gallery-grid a:focus .caption{
+  transform:translateY(0);
+}
+
+ 
+.gallery-grid a:focus{
+  outline: 3px solid rgba(0,120,210,0.5);
+  outline-offset: 3px;
 }
 </style>
-
   
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="alternate icon" href="/favicon.ico">

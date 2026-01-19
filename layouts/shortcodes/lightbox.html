@@ -1,12 +1,14 @@
 {{/*
 Shortcode: {{< lightbox id="optional-id" >}}
- - If used in a page bundle (content/portfolio/ with images), it lists images in that bundle.
+ - If used in a page bundle (content/* with images), it lists images in that bundle.
  - Optional param `id` sets data-gallery id for multiple galleries.
  - Optional param `images="img1.jpg,img2.png"` to list specific resource basenames (comma-separated).
+ - Optional param `sortby="order|name|date"` choose how images are ordered (default: order then name)
 */}}
 
-{{ $galleryID := .Get "id" | default "gallery" }}
+{{ $galleryID := .Get "id" | default (printf "gallery-%s" .Page.File.BaseFileName) }}
 {{ $imagesParam := .Get "images" }}
+{{ $sortby := .Get "sortby" | default "order" }}
 {{ $resources := slice }}
 
 {{ if $imagesParam }}
@@ -17,21 +19,36 @@ Shortcode: {{< lightbox id="optional-id" >}}
     {{ end }}
   {{ end }}
 {{ else }}
-  {{/* try common image patterns first */}}
-  {{ $resources = $.Page.Resources.Match "*.{jpg,jpeg,png,gif,webp}" }}
+  {{/* collect common image patterns first */}}
+  {{ $resources = $.Page.Resources.Match "*.{jpg,jpeg,png,gif,webp,svg}" }}
   {{ if eq (len $resources) 0 }}
     {{ $resources = $.Page.Resources.ByType "image" }}
   {{ end }}
 {{ end }}
 
+{{/* sorting: prefer explicit Params.order, fallback to Name */}}
+{{ if gt (len $resources) 0 }}
+  {{ if eq $sortby "name" }}
+    {{ $resources = sort $resources "Name" "asc" }}
+  {{ else if eq $sortby "date" }}
+    {{ $resources = sort $resources "Date" "desc" }}
+  {{ else }}
+    {{/* default: sort by Params.order (numeric) then Name */}}
+    {{ $resources = sort $resources "Params.order" "asc" }}
+    {{ $resources = sort $resources "Name" "asc" }}
+  {{ end }}
+{{ end }}
+
 {{ if not (gt (len $resources) 0) }}
-  <p><em>No images found for the gallery. Put images in the page bundle (same folder as this page) or pass images=\"name.jpg\"</em></p>
+  <p><em>No images found for the gallery. Put images in the page bundle (same folder as this page) or pass images="name.jpg"</em></p>
 {{ else }}
   <div class="gallery-grid">
   {{ range $i, $img := $resources }}
-    {{ $thumb := $img.Fit "600x400" }}
-    <a href="{{ $img.Permalink }}" class="glightbox" data-gallery="{{ $galleryID }}" data-type="image" title="{{ $img.Name }}">
-      <img src="{{ $thumb.RelPermalink }}" alt="{{ $img.Name }}">
+    {{ $thumb := $img.Fit "800x600" }}
+    {{ $caption := (or $img.Params.caption $img.Title $img.Name) }}
+    <a href="{{ $img.Permalink }}" class="glightbox" data-gallery="{{ $galleryID }}" data-type="image" data-title="{{ $caption }}">
+      <img src="{{ $thumb.RelPermalink }}" alt="{{ $img.Params.alt | default $caption }}">
+      <span class="caption">{{ $caption }}</span>
     </a>
   {{ end }}
   </div>

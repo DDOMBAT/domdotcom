@@ -3,7 +3,7 @@
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="UTF-8">
   <title>Portfolio</title>
-  <link rel="stylesheet" href="/css/style.css">
+ <link rel="stylesheet" href="/css/style.css">
   <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
 <style>
  
@@ -12,17 +12,56 @@
   grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
   gap:12px;
   margin-top: 1rem;
+  padding: 0;
+}
+.gallery-grid a{
+  display:block;
+  position:relative;
+  overflow:hidden;
+  border-radius:4px;
+  text-decoration: none;
+  color: inherit;
 }
 .gallery-grid a img{
   width:100%;
   height:auto;
   display:block;
   object-fit:cover;
-  border-radius:4px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  transition: transform 0.35s ease;
+}
+
+ 
+.gallery-grid a:hover img{
+  transform: scale(1.04);
+}
+
+ 
+.gallery-grid .caption{
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  padding:.6rem .8rem;
+  background: linear-gradient(0deg, rgba(0,0,0,0.6), rgba(0,0,0,0.35));
+  color:#fff;
+  font-size:0.95rem;
+  transform:translateY(100%);
+  transition: transform 0.22s ease;
+  line-height:1.2;
+  pointer-events:none;
+}
+
+.gallery-grid a:hover .caption,
+.gallery-grid a:focus .caption{
+  transform:translateY(0);
+}
+
+ 
+.gallery-grid a:focus{
+  outline: 3px solid rgba(0,120,210,0.5);
+  outline-offset: 3px;
 }
 </style>
-
   
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="alternate icon" href="/favicon.ico">
@@ -37,12 +76,12 @@
 
     <div class="container">
       <nav class="sidebar">
-        <a href="{{ "home" | relURL }}">Home</a>
-        <a href="{{ "portfolio" | relURL }}" class="nav-link">Portfolio</a>
-        <a href="{{ "consulting" | relURL }}" class="nav-link">Field Notes</a>
-        <a href="{{ "fieldnotes" | relURL }}" class="nav-link">Consulting</a>
-        <a href="{{ "about" | relURL }}" class="nav-link">About</a>
-        <a href="{{ "contact" | relURL }}" class="nav-link">Contact</a>
+        <a href="/" class="nav-link">Home</a>
+        <a href="/portfolio/" class="nav-link">Portfolio</a>
+        <a href="/fieldnotes/" class="nav-link">Field Notes</a>
+        <a href="/consulting/" class="nav-link">Consulting</a>
+        <a href="/about/" class="nav-link">About</a>
+        <a href="/contact/" class="nav-link">Contact</a>
       </nav>
 
       <main class="homepage">
@@ -70,9 +109,19 @@
 
 
 
+
   
   
   
+    
+  
+
+
+
+
+  
+    
+    
     
   
 
@@ -81,52 +130,69 @@
   <div class="gallery-grid">
   
     
-    <a href="http://localhost:1313/portfolio/images/cube-frame.jpg" class="glightbox" data-gallery="portfolio" data-type="image" title="images/cube-frame.jpg">
-      <img src="/portfolio/images/cube-frame_hu_5046dccab4bd17d6.jpg" alt="images/cube-frame.jpg">
+    
+    <a href="http://localhost:1313/portfolio/images/img-1.jpg" class="glightbox" data-gallery="portfolio" data-type="image" data-title="images/img-1.jpg">
+      <img src="/portfolio/images/img-1_hu_8a575eb2da1cac20.jpg" alt="images/img-1.jpg">
+      <span class="caption">images/img-1.jpg</span>
     </a>
   
     
-    <a href="http://localhost:1313/portfolio/images/dedecahredon-sphere.jpg" class="glightbox" data-gallery="portfolio" data-type="image" title="images/dedecahredon-sphere.jpg">
-      <img src="/portfolio/images/dedecahredon-sphere_hu_76a3cede1063d52e.jpg" alt="images/dedecahredon-sphere.jpg">
+    
+    <a href="http://localhost:1313/portfolio/images/img-2.jpg" class="glightbox" data-gallery="portfolio" data-type="image" data-title="images/img-2.jpg">
+      <img src="/portfolio/images/img-2_hu_9886c990b72a7879.jpg" alt="images/img-2.jpg">
+      <span class="caption">images/img-2.jpg</span>
     </a>
   
     
-    <a href="http://localhost:1313/portfolio/images/jason-installation-2.jpg" class="glightbox" data-gallery="portfolio" data-type="image" title="images/jason-installation-2.jpg">
-      <img src="/portfolio/images/jason-installation-2_hu_8ab0cc9df712eba8.jpg" alt="images/jason-installation-2.jpg">
+    
+    <a href="http://localhost:1313/portfolio/images/img-3.jpg" class="glightbox" data-gallery="portfolio" data-type="image" data-title="images/img-3.jpg">
+      <img src="/portfolio/images/img-3_hu_bf661576f94a5fa8.jpg" alt="images/img-3.jpg">
+      <span class="caption">images/img-3.jpg</span>
     </a>
   
     
-    <a href="http://localhost:1313/portfolio/images/lips-2.jpg" class="glightbox" data-gallery="portfolio" data-type="image" title="images/lips-2.jpg">
-      <img src="/portfolio/images/lips-2_hu_d8e3befbecf41db2.jpg" alt="images/lips-2.jpg">
+    
+    <a href="http://localhost:1313/portfolio/images/img-4.jpg" class="glightbox" data-gallery="portfolio" data-type="image" data-title="images/img-4.jpg">
+      <img src="/portfolio/images/img-4_hu_6226d01b0ef84739.jpg" alt="images/img-4.jpg">
+      <span class="caption">images/img-4.jpg</span>
     </a>
   
     
-    <a href="http://localhost:1313/portfolio/images/night-table-stand.jpg" class="glightbox" data-gallery="portfolio" data-type="image" title="images/night-table-stand.jpg">
-      <img src="/portfolio/images/night-table-stand_hu_dae8d08ef92541a7.jpg" alt="images/night-table-stand.jpg">
+    
+    <a href="http://localhost:1313/portfolio/images/img-5.jpg" class="glightbox" data-gallery="portfolio" data-type="image" data-title="images/img-5.jpg">
+      <img src="/portfolio/images/img-5_hu_45303f1f002417cd.jpg" alt="images/img-5.jpg">
+      <span class="caption">images/img-5.jpg</span>
     </a>
   
     
-    <a href="http://localhost:1313/portfolio/images/rig-welding.jpg" class="glightbox" data-gallery="portfolio" data-type="image" title="images/rig-welding.jpg">
-      <img src="/portfolio/images/rig-welding_hu_532c04d61a90d178.jpg" alt="images/rig-welding.jpg">
+    
+    <a href="http://localhost:1313/portfolio/images/img-6.jpg" class="glightbox" data-gallery="portfolio" data-type="image" data-title="images/img-6.jpg">
+      <img src="/portfolio/images/img-6_hu_c30532f46bab4f10.jpg" alt="images/img-6.jpg">
+      <span class="caption">images/img-6.jpg</span>
     </a>
   
     
-    <a href="http://localhost:1313/portfolio/images/straw-mesh.jpg" class="glightbox" data-gallery="portfolio" data-type="image" title="images/straw-mesh.jpg">
-      <img src="/portfolio/images/straw-mesh_hu_bcd7e66b6926ffba.jpg" alt="images/straw-mesh.jpg">
+    
+    <a href="http://localhost:1313/portfolio/images/img-7.jpg" class="glightbox" data-gallery="portfolio" data-type="image" data-title="images/img-7.jpg">
+      <img src="/portfolio/images/img-7_hu_530869bd9b663d7e.jpg" alt="images/img-7.jpg">
+      <span class="caption">images/img-7.jpg</span>
     </a>
   
     
-    <a href="http://localhost:1313/portfolio/images/the-oracle-2.jpg" class="glightbox" data-gallery="portfolio" data-type="image" title="images/the-oracle-2.jpg">
-      <img src="/portfolio/images/the-oracle-2_hu_cf1136ee8ab9883c.jpg" alt="images/the-oracle-2.jpg">
+    
+    <a href="http://localhost:1313/portfolio/images/img-8.jpg" class="glightbox" data-gallery="portfolio" data-type="image" data-title="images/img-8.jpg">
+      <img src="/portfolio/images/img-8_hu_d7f71edeffddf3f.jpg" alt="images/img-8.jpg">
+      <span class="caption">images/img-8.jpg</span>
     </a>
   
     
-    <a href="http://localhost:1313/portfolio/images/wave-1.jpg" class="glightbox" data-gallery="portfolio" data-type="image" title="images/wave-1.jpg">
-      <img src="/portfolio/images/wave-1_hu_8d1bd4608ce0d684.jpg" alt="images/wave-1.jpg">
+    
+    <a href="http://localhost:1313/portfolio/images/img-9.jpg" class="glightbox" data-gallery="portfolio" data-type="image" data-title="images/img-9.jpg">
+      <img src="/portfolio/images/img-9_hu_695fb491893e02db.jpg" alt="images/img-9.jpg">
+      <span class="caption">images/img-9.jpg</span>
     </a>
   
   </div>
-
 
 <ul class="pa0">
   
