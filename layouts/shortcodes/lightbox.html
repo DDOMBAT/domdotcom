@@ -36,16 +36,8 @@
   {{ range $i, $img := $resources }}
     {{ $thumb := $img.Fit "800x600" }}
     {{ $caption := (or $img.Params.caption $img.Title $img.Name) }}
-    <a
-      href="{{ $img.Permalink }}"
-      class="glightbox"
-      data-gallery="{{ $galleryID }}"
-      data-type="image"
-      title="{{ $caption | htmlEscape }}"
-      data-title="{{ $caption | htmlEscape }}"
-      data-description="{{ $caption | htmlEscape }}"
-      data-desc="{{ $caption | htmlEscape }}"
-    >
+    <!-- removed title attribute to avoid native browser tooltip; GLightbox uses data-title -->
+    <a href="{{ $img.Permalink }}" class="glightbox" data-gallery="{{ $galleryID }}" data-type="image" data-title="{{ $caption }}">
       <img src="{{ $thumb.RelPermalink }}" alt="{{ $img.Params.alt | default $caption }}">
       <span class="caption">{{ $caption }}</span>
     </a>

@@ -3,17 +3,17 @@ title = "Portfolio"
 description = "A curated selection of projects (placeholder content)."
 
 [[resources]]
-src = "collabs-work/img-1.jpg"
+src = "collabs-work/img-4.jpg"
 [resources.params]
-caption = "City of Gods 2025"
+caption = "City of Gods 2025: Programmed/modified analog phone to ring every 30 minutes allowing 'The Oracle' to speak."
 alt = "The Oracle"
 order = 10
 
 [[resources]]
-src = "img-2.jpg"
+src = "fab-work/img-2.jpg"
 [resources.params]
-caption = "Portrait of the artist"
-alt = "Artist portrait"
+caption = ""
+alt = "Wired and constructed RGB Spheres for Jason Krugman"
 order = 20
 
 [[resources]]
