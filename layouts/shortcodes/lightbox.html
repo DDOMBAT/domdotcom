@@ -1,11 +1,4 @@
-{{/*
-Shortcode: {{< lightbox id="optional-id" >}}
- - If used in a page bundle (content/* with images), it lists images in that bundle.
- - Optional param `id` sets data-gallery id for multiple galleries.
- - Optional param `images="img1.jpg,img2.png"` to list specific resource basenames (comma-separated).
- - Optional param `sortby="order|name|date"` choose how images are ordered (default: order then name)
-*/}}
-
+{{/* layouts/shortcodes/lightbox.html */}}
 {{ $galleryID := .Get "id" | default (printf "gallery-%s" .Page.File.BaseFileName) }}
 {{ $imagesParam := .Get "images" }}
 {{ $sortby := .Get "sortby" | default "order" }}
@@ -19,21 +12,18 @@ Shortcode: {{< lightbox id="optional-id" >}}
     {{ end }}
   {{ end }}
 {{ else }}
-  {{/* collect common image patterns first */}}
   {{ $resources = $.Page.Resources.Match "*.{jpg,jpeg,png,gif,webp,svg}" }}
   {{ if eq (len $resources) 0 }}
     {{ $resources = $.Page.Resources.ByType "image" }}
   {{ end }}
 {{ end }}
 
-{{/* sorting: prefer explicit Params.order, fallback to Name */}}
 {{ if gt (len $resources) 0 }}
   {{ if eq $sortby "name" }}
     {{ $resources = sort $resources "Name" "asc" }}
   {{ else if eq $sortby "date" }}
     {{ $resources = sort $resources "Date" "desc" }}
   {{ else }}
-    {{/* default: sort by Params.order (numeric) then Name */}}
     {{ $resources = sort $resources "Params.order" "asc" }}
     {{ $resources = sort $resources "Name" "asc" }}
   {{ end }}
@@ -46,7 +36,16 @@ Shortcode: {{< lightbox id="optional-id" >}}
   {{ range $i, $img := $resources }}
     {{ $thumb := $img.Fit "800x600" }}
     {{ $caption := (or $img.Params.caption $img.Title $img.Name) }}
-    <a href="{{ $img.Permalink }}" class="glightbox" data-gallery="{{ $galleryID }}" data-type="image" data-title="{{ $caption }}">
+    <a
+      href="{{ $img.Permalink }}"
+      class="glightbox"
+      data-gallery="{{ $galleryID }}"
+      data-type="image"
+      title="{{ $caption | htmlEscape }}"
+      data-title="{{ $caption | htmlEscape }}"
+      data-description="{{ $caption | htmlEscape }}"
+      data-desc="{{ $caption | htmlEscape }}"
+    >
       <img src="{{ $thumb.RelPermalink }}" alt="{{ $img.Params.alt | default $caption }}">
       <span class="caption">{{ $caption }}</span>
     </a>
