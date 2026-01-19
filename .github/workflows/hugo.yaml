@@ -70,6 +70,7 @@ jobs:
         run: |
           git config core.quotepath false
       - name: Cache restore
+        if: false
         id: cache-restore
         uses: actions/cache/restore@v5
         with:
@@ -85,6 +86,7 @@ jobs:
             --baseURL "${{ steps.pages.outputs.base_url }}/" \
             --cacheDir "${{ runner.temp }}/hugo_cache"
       - name: Cache save
+        if: false
         id: cache-save
         uses: actions/cache/save@v5
         with:
