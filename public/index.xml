@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Welcome to DomDotCom on DOMDOTCOM: A REFUGE FOR IDEAS</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content in Welcome to DomDotCom on DOMDOTCOM: A REFUGE FOR IDEAS</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 25 Apr 2025 13:36:10 -0400</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Contact</title>
+      <link>http://localhost:1313/contact/</link>
+      <pubDate>Fri, 25 Apr 2025 13:36:10 -0400</pubDate>
+      <guid>http://localhost:1313/contact/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Fri, 25 Apr 2025 13:35:49 -0400</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Why We Sit in the Dark: A Personal Atlas of NYC Film Subcultures</title>
+      <link>http://localhost:1313/fieldnotes/why_we_sit_in_the_dark/</link>
+      <pubDate>Thu, 24 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fieldnotes/why_we_sit_in_the_dark/</guid>
+      <description>&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;&#xA;&lt;h2 id=&#34;intro-1&#34;&gt;Intro&lt;/h2&gt;&#xA;&lt;p&gt;I’ve wandered from Light Industry to BAM, from rooftop screenings in Bushwick to avant-garde symposia at Anthology. Most crowds never mix—but I was always there, a glue figure, projectionist, witness, archive.&lt;/p&gt;&#xA;&lt;p&gt;There was a stretch of time when I was a raging alcoholic with a broken heart and a big checkbook. Film wasn’t just something I watched—it was a way I survived. I showed up half-drunk, fully devoted. I watched until I forgot why I was watching. I paid for strangers, left halfway through masterpieces, cried during trailers, and debated until the projector clicked off.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Portfolio</title>
+      <link>http://localhost:1313/portfolio/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio/</guid>
+      <description>&lt;div class=&#34;gallery-grid&#34;&gt;&#xA;  &#xA;    &#xA;    &lt;a href=&#34;http://localhost:1313/portfolio/images/cube-frame.jpg&#34; class=&#34;glightbox&#34; data-gallery=&#34;portfolio&#34; data-type=&#34;image&#34; title=&#34;images/cube-frame.jpg&#34;&gt;&#xA;      &lt;img src=&#34;http://localhost:1313/portfolio/images/cube-frame_hu_5046dccab4bd17d6.jpg&#34; alt=&#34;images/cube-frame.jpg&#34;&gt;&#xA;    &lt;/a&gt;&#xA;  &#xA;    &#xA;    &lt;a href=&#34;http://localhost:1313/portfolio/images/dedecahredon-sphere.jpg&#34; class=&#34;glightbox&#34; data-gallery=&#34;portfolio&#34; data-type=&#34;image&#34; title=&#34;images/dedecahredon-sphere.jpg&#34;&gt;&#xA;      &lt;img src=&#34;http://localhost:1313/portfolio/images/dedecahredon-sphere_hu_76a3cede1063d52e.jpg&#34; alt=&#34;images/dedecahredon-sphere.jpg&#34;&gt;&#xA;    &lt;/a&gt;&#xA;  &#xA;    &#xA;    &lt;a href=&#34;http://localhost:1313/portfolio/images/jason-installation-2.jpg&#34; class=&#34;glightbox&#34; data-gallery=&#34;portfolio&#34; data-type=&#34;image&#34; title=&#34;images/jason-installation-2.jpg&#34;&gt;&#xA;      &lt;img src=&#34;http://localhost:1313/portfolio/images/jason-installation-2_hu_8ab0cc9df712eba8.jpg&#34; alt=&#34;images/jason-installation-2.jpg&#34;&gt;&#xA;    &lt;/a&gt;&#xA;  &#xA;    &#xA;    &lt;a href=&#34;http://localhost:1313/portfolio/images/lips-2.jpg&#34; class=&#34;glightbox&#34; data-gallery=&#34;portfolio&#34; data-type=&#34;image&#34; title=&#34;images/lips-2.jpg&#34;&gt;&#xA;      &lt;img src=&#34;http://localhost:1313/portfolio/images/lips-2_hu_d8e3befbecf41db2.jpg&#34; alt=&#34;images/lips-2.jpg&#34;&gt;&#xA;    &lt;/a&gt;&#xA;  &#xA;    &#xA;    &lt;a href=&#34;http://localhost:1313/portfolio/images/night-table-stand.jpg&#34; class=&#34;glightbox&#34; data-gallery=&#34;portfolio&#34; data-type=&#34;image&#34; title=&#34;images/night-table-stand.jpg&#34;&gt;&#xA;      &lt;img src=&#34;http://localhost:1313/portfolio/images/night-table-stand_hu_dae8d08ef92541a7.jpg&#34; alt=&#34;images/night-table-stand.jpg&#34;&gt;&#xA;    &lt;/a&gt;&#xA;  &#xA;    &#xA;    &lt;a href=&#34;http://localhost:1313/portfolio/images/rig-welding.jpg&#34; class=&#34;glightbox&#34; data-gallery=&#34;portfolio&#34; data-type=&#34;image&#34; title=&#34;images/rig-welding.jpg&#34;&gt;&#xA;      &lt;img src=&#34;http://localhost:1313/portfolio/images/rig-welding_hu_532c04d61a90d178.jpg&#34; alt=&#34;images/rig-welding.jpg&#34;&gt;&#xA;    &lt;/a&gt;&#xA;  &#xA;    &#xA;    &lt;a href=&#34;http://localhost:1313/portfolio/images/straw-mesh.jpg&#34; class=&#34;glightbox&#34; data-gallery=&#34;portfolio&#34; data-type=&#34;image&#34; title=&#34;images/straw-mesh.jpg&#34;&gt;&#xA;      &lt;img src=&#34;http://localhost:1313/portfolio/images/straw-mesh_hu_bcd7e66b6926ffba.jpg&#34; alt=&#34;images/straw-mesh.jpg&#34;&gt;&#xA;    &lt;/a&gt;&#xA;  &#xA;    &#xA;    &lt;a href=&#34;http://localhost:1313/portfolio/images/the-oracle-2.jpg&#34; class=&#34;glightbox&#34; data-gallery=&#34;portfolio&#34; data-type=&#34;image&#34; title=&#34;images/the-oracle-2.jpg&#34;&gt;&#xA;      &lt;img src=&#34;http://localhost:1313/portfolio/images/the-oracle-2_hu_cf1136ee8ab9883c.jpg&#34; alt=&#34;images/the-oracle-2.jpg&#34;&gt;&#xA;    &lt;/a&gt;&#xA;  &#xA;    &#xA;    &lt;a href=&#34;http://localhost:1313/portfolio/images/wave-1.jpg&#34; class=&#34;glightbox&#34; data-gallery=&#34;portfolio&#34; data-type=&#34;image&#34; title=&#34;images/wave-1.jpg&#34;&gt;&#xA;      &lt;img src=&#34;http://localhost:1313/portfolio/images/wave-1_hu_8d1bd4608ce0d684.jpg&#34; alt=&#34;images/wave-1.jpg&#34;&gt;&#xA;    &lt;/a&gt;&#xA;  &#xA;  &lt;/div&gt;</description>
+    </item>
+  </channel>
+</rss>
