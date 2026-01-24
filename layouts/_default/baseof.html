@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <title>{{ .Title }}</title>
- <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/style.css">
   {{ partial "lightbox_head.html" . }}
   <!-- favicon: will use /favicon.svg if present, fallback to /favicon.ico -->
-  <link rel="icon" href="{{ "favicon.svg" | relURL }}" type="image/svg+xml">
-  <link rel="alternate icon" href="{{ "favicon.ico" | relURL }}">
+  <link rel="icon" href="{{ .Site.BaseURL }}/favicon.svg" type="image/svg+xml">
+  <link rel="alternate icon" href="{{ .Site.BaseURL }}/favicon.ico">
 </head>
 <body>
 
@@ -19,21 +19,14 @@
     </main>
   {{ else }}
     <!-- Not home: render header + sidebar + normal main -->
-    <!-- <header class="site-header">
-      <a href="/" class="brand">
-        <img src="/images/DOM-LOGO-2.svg" alt="DomDotCom" class="site-logo" />
-        <!--<span class="sr-only">DomDotCom</span> -->
-      </a>
-    <!--</header> -->
-
     <div class="container">
       <nav class="sidebar">
-        <a href="/" class="nav-link">Home</a>
-        <a href="/portfolio/" class="nav-link">Portfolio</a>
-        <a href="/fieldnotes/" class="nav-link">Field Notes</a>
-        <a href="/consulting/" class="nav-link">Consulting</a>
-        <a href="/about/" class="nav-link">About</a>
-        <a href="/contact/" class="nav-link">Contact</a>
+        <a href="{{ .Site.BaseURL }}/" class="nav-link">Home</a>
+        <a href="{{ .Site.BaseURL }}/portfolio/" class="nav-link">Portfolio</a>
+        <a href="{{ .Site.BaseURL }}/fieldnotes/" class="nav-link">Field Notes</a>
+        <a href="{{ .Site.BaseURL }}/consulting/" class="nav-link">Consulting</a>
+        <a href="{{ .Site.BaseURL }}/about/" class="nav-link">About</a>
+        <a href="{{ .Site.BaseURL }}/contact/" class="nav-link">Contact</a>
       </nav>
 
       <main class="homepage">
