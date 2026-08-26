@@ -9,6 +9,6 @@ title = 'Contact'
   <!-- <img src="/images/hanging-gardens-install.jpg" alt="Hanging Gardens Install" style="max-width:240px;border-radius:6px;"> -->
 </div>
 
-<p style="margin-top:.75rem">Email: 
+<p style="margin-top:.75rem">
 	<a href="mailto:ddoyleservices@gmail.com">ddoyleservices@gmail.com</a>
 </p>

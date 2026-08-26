@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Welcome to DomDotCom on DOMDOTCOM: A REFUGE FOR IDEAS</title>
+    <title>DOMDOTCOM: A REFUGE FOR IDEAS</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content in Welcome to DomDotCom on DOMDOTCOM: A REFUGE FOR IDEAS</description>
+    <description>Recent content on DOMDOTCOM: A REFUGE FOR IDEAS</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
@@ -13,7 +13,7 @@
       <link>http://localhost:1313/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/contact/</guid>
-      <description>&lt;div style=&#34;text-align:center&#34;&gt;&#xA;  &lt;img src=&#34;http://localhost:1313/images/bellows.jpg&#34; alt=&#34;Lucien Abigail: Bellows&#34; style=&#34;max-width:240px;border-radius:6px;margin-bottom:.75rem;&#34;&gt;&#xA;  &lt;!-- &lt;img src=&#34;http://localhost:1313/images/hanging-gardens-install.jpg&#34; alt=&#34;Hanging Gardens Install&#34; style=&#34;max-width:240px;border-radius:6px;&#34;&gt; --&gt;&#xA;&lt;/div&gt;&#xA;&lt;p style=&#34;margin-top:.75rem&#34;&gt;Email: &#xA;&#x9;&lt;a href=&#34;mailto:ddoyleservices@gmail.com&#34;&gt;ddoyleservices@gmail.com&lt;/a&gt;&#xA;&lt;/p&gt;</description>
+      <description>&lt;div style=&#34;text-align:center&#34;&gt;&#xA;  &lt;img src=&#34;http://localhost:1313/images/bellows.jpg&#34; alt=&#34;Lucien Abigail: Bellows&#34; style=&#34;max-width:240px;border-radius:6px;margin-bottom:.75rem;&#34;&gt;&#xA;  &lt;!-- &lt;img src=&#34;http://localhost:1313/images/hanging-gardens-install.jpg&#34; alt=&#34;Hanging Gardens Install&#34; style=&#34;max-width:240px;border-radius:6px;&#34;&gt; --&gt;&#xA;&lt;/div&gt;&#xA;&lt;p style=&#34;margin-top:.75rem&#34;&gt;&#xA;&#x9;&lt;a href=&#34;mailto:ddoyleservices@gmail.com&#34;&gt;ddoyleservices@gmail.com&lt;/a&gt;&#xA;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Portfolio</title>

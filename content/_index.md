@@ -1,5 +1,4 @@
 ---
-title: "Welcome to DomDotCom"
 ---
 <!-- # DomDotCom -->
 <!-- → [View Portfolio](/portfolio/)
