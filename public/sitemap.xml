@@ -14,39 +14,10 @@
     <loc>http://localhost:1313/contact/</loc>
     <lastmod>2025-04-25T13:36:10-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
-    <lastmod>2025-04-25T13:35:49-04:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/fieldnotes/</loc>
-    <lastmod>2025-04-25T13:29:52-04:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2025-04-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/cinema-scenes/</loc>
-    <lastmod>2025-04-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/cinephilia/</loc>
-    <lastmod>2025-04-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/film/</loc>
-    <lastmod>2025-04-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/memoir/</loc>
-    <lastmod>2025-04-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/nyc/</loc>
-    <lastmod>2025-04-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/subcultures/</loc>
-    <lastmod>2025-04-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2025-04-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/fieldnotes/why_we_sit_in_the_dark/</loc>
-    <lastmod>2025-04-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/portfolio/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
   </url>
 </urlset>

@@ -3,6 +3,14 @@ title = "Portfolio"
 description = "A curated selection of projects"
 
 [[resources]]
+src = "fab-work/bellows.jpg"
+[resources.params]
+caption = "Lucien Abigail's Bellows piece: Worked on mechanicals and metal work"
+alt = "Bellows"
+order = 5
+
+
+[[resources]]
 src = "collabs-work/img-4.jpg"
 [resources.params]
 caption = "City of Gods 2025: Programmed/modified analog phone to ring every 30 minutes allowing 'The Oracle' to speak."
@@ -42,28 +50,28 @@ src = "metal-work/img-3.jpg"
 [resources.params]
 caption = "'Lips' wind-powered  kinetic sculpture moquette for grant proposal: Welded steel, found objects."
 alt = ""
-order = 50
+order = 60
 
 [[resources]]
 src = "metal-work/img-6.jpg"
 [resources.params]
 caption = "Bed-side Table: welded sheet Metal and 3/8 steel rod"
 alt = ""
-order = 60
+order = 70
 
 [[resources]]
 src = "metal-work/img-7.jpg"
 [resources.params]
 caption = "Structural Shop Rig: welded steel"
 alt = ""
-order = 70
+order = 80
 
 [[resources]]
 src = "metal-work/img-9.jpg"
 [resources.params]
 caption = "Wave #1: Welded Sheet Metal + Electronics"
 alt = ""
-order = 70
+order = 90
 +++
 
 {{< lightbox id="portfolio" >}}
