@@ -2,37 +2,70 @@
 title = "Portfolio"
 description = "A curated selection of projects"
 
+
 [[resources]]
-src = "fab-work/bellows.jpg"
+src = "metal-work/mini-foosball.jpg"
 [resources.params]
-caption = "Lucien Abigail's Bellows piece: Worked on mechanicals and metal work"
+caption = "Mini-foosball out of scrap metal"
+alt = "Mini Foosball"
+order = 1
+
+
+[[resources]]
+src = "metal-work/dia-yang-frames.jpg"
+[resources.params]
+caption = "Profiled and Assembled Metal Frames for Dia Beacon: Hague Yang"
+alt = "Dia Beacon: Hague Yang Frames"
+order = 2
+
+
+
+[[resources]]
+src = "fab-work/led-board.jpeg"
+[resources.params]
+caption = "Infinity Mirror: LED Board Fab and Mirror Etching"
+alt = "Ivan Navarro's Infinity Mirrors"
+order = 3
+
+
+[[resources]]
+src = "collabs-work/green-envy.jpg"
+[resources.params]
+caption = "Red Hook Regatta Submission"
+alt = "Green Envy RC Boat"
+order = 4
+
+[[resources]]
+src = "fab-work/BELLOWS.jpg"
+[resources.params]
+caption = "Lucien Abigail's Bellows: mechanicals and metal work"
 alt = "Bellows"
 order = 5
 
 
 [[resources]]
-src = "collabs-work/img-4.jpg"
+src = "collabs-work/oracle.jpg"
 [resources.params]
 caption = "City of Gods 2025: Programmed/modified analog phone to ring every 30 minutes allowing 'The Oracle' to speak."
 alt = "The Oracle"
 order = 10
 
 [[resources]]
-src = "fab-work/img-2.jpg"
+src = "fab-work/red-sphere.jpg"
 [resources.params]
-caption = "Wired and constructed RGB Spheres for Jason Krugman"
+caption = "Wired and constructed RGB Spheres by Jason Krugman"
 alt = "RGB Spheres"
 order = 20
 
 [[resources]]
-src = "fab-work/img-8.jpg"
+src = "fab-work/straw-mesh.jpg"
 [resources.params]
-caption = "Fabricated LED Mesh, assembled into straw sculpture"
+caption = "Fabricated LED Mesh, assembled into straw sculpture  by Jason Krugman"
 alt = "Installation"
 order = 30
 
 [[resources]]
-src = "install-work/img-1.jpg"
+src = "install-work/orlando-install.jpg"
 [resources.params]
 caption = "On-site Installation of another Jason Krugman piece in Orlando, Florida"
 alt = "Orlando, Florida"
