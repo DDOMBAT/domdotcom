@@ -31,8 +31,8 @@ order = 3
 [[resources]]
 src = "collabs-work/green-envy.jpg"
 [resources.params]
-caption = "Red Hook Regatta Submission"
-alt = "Green Envy RC Boat"
+caption = "2026 Red Hook RC Boat Regatta #2 Place"
+alt = "The Green Envy"
 order = 4
 
 [[resources]]
@@ -55,6 +55,13 @@ src = "fab-work/red-sphere.jpg"
 [resources.params]
 caption = "Wired and constructed RGB Spheres by Jason Krugman"
 alt = "RGB Spheres"
+order = 20
+
+[[resources]]
+src = "fab-work/wave-led.jpg"
+[resources.params]
+caption = "Jason Krugman wave LED sculpture"
+alt = "LED Wave"
 order = 20
 
 [[resources]]
