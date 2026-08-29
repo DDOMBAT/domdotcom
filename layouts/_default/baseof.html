@@ -36,5 +36,30 @@
   {{ end }}
 
   {{ partial "lightbox_scripts.html" . }}
+
+  <script>
+  // Auto-enable GLightbox on links that point to common video sources so authors don't
+  // have to add classes/data attributes everywhere. This will add the `glightbox` class
+  // and `data-type="video"` to anchors linking to mp4/webm/ogg/mov files and to
+  // YouTube/Vimeo URLs.
+  document.addEventListener('DOMContentLoaded', function () {
+    try {
+      var videoExt = /\.(mp4|webm|ogg|mov)(\?.*)?$/i;
+      var anchors = document.querySelectorAll('a[href]');
+      anchors.forEach(function (a) {
+        var href = a.getAttribute('href') || '';
+        // Skip anchors that already opt out
+        if (a.classList.contains('no-glightbox') || a.classList.contains('glightbox')) return;
+        if (videoExt.test(href) || /youtube\.com\/watch\?v=|youtu\.be\//i.test(href) || /vimeo\.com\//i.test(href)) {
+          a.classList.add('glightbox');
+          a.setAttribute('data-type', 'video');
+        }
+      });
+    } catch (e) {
+      // silently fail; do not break the page if JS errors
+      console.error('lightbox video enhancer error:', e);
+    }
+  });
+  </script>
 </body>
 </html>
