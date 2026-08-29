@@ -35,7 +35,7 @@
 }
 .gallery-grid a img{
   width:100%;
-  height:auto;
+  height:100%;
   display:block;
   object-fit:cover;
   transition: transform 0.35s ease;
@@ -86,7 +86,7 @@
       <nav class="sidebar">
         <a href="http://localhost:1313//" class="nav-link">Home</a>
         <a href="http://localhost:1313//portfolio/" class="nav-link">Portfolio</a>
-        <a href="http://localhost:1313//fieldnotes/" class="nav-link">Field Notes</a>
+        
         <a href="http://localhost:1313//consulting/" class="nav-link">Consulting</a>
         <a href="http://localhost:1313//contact/" class="nav-link">Contact</a>
       </nav>
@@ -120,5 +120,30 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 </script>
 
+
+  <script>
+  
+  
+  
+  
+  document.addEventListener('DOMContentLoaded', function () {
+    try {
+      var videoExt = /\.(mp4|webm|ogg|mov)(\?.*)?$/i;
+      var anchors = document.querySelectorAll('a[href]');
+      anchors.forEach(function (a) {
+        var href = a.getAttribute('href') || '';
+        
+        if (a.classList.contains('no-glightbox') || a.classList.contains('glightbox')) return;
+        if (videoExt.test(href) || /youtube\.com\/watch\?v=|youtu\.be\//i.test(href) || /vimeo\.com\//i.test(href)) {
+          a.classList.add('glightbox');
+          a.setAttribute('data-type', 'video');
+        }
+      });
+    } catch (e) {
+      
+      console.error('lightbox video enhancer error:', e);
+    }
+  });
+  </script>
 </body>
 </html>
