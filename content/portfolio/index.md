@@ -4,7 +4,7 @@ description = "A curated selection of projects"
 
 
 [[resources]]
-src = "metal-work/mini-foosball.jpg"
+src = "metal-work/j-mini-foosball.jpg"
 [resources.params]
 caption = "Mini-foosball out of scrap metal"
 alt = "Mini Foosball"
@@ -12,31 +12,38 @@ order = 1
 
 
 [[resources]]
-src = "metal-work/dia-yang-frames.jpg"
+src = "c-dia-yang-frames.jpg"
 [resources.params]
-caption = "Profiled and Assembled Metal Frames for Dia Beacon: Hague Yang"
+caption = "Metal Frames for Dia Beacon: Hague Yang"
 alt = "Dia Beacon: Hague Yang Frames"
 order = 2
 
 
 
 [[resources]]
-src = "fab-work/led-board.jpeg"
+src = "a-led-board.jpeg"
 [resources.params]
 caption = "Infinity Mirror: LED Board Fab and Mirror Etching"
 alt = "Ivan Navarro's Infinity Mirrors"
 order = 3
 
+[[resources]]
+src = "f-wavy-led.jpeg"
+[resources.params]
+caption = "LED Wave for Jason Krugman"
+alt = "Ivan Navarro's Infinity Mirrors"
+order = 3
+
 
 [[resources]]
-src = "collabs-work/green-envy.jpg"
+src = "k-wave-machine-placeholder.jpg"
 [resources.params]
-caption = "Red Hook Regatta Submission"
+caption = "Wave Machine for RC Boats"
 alt = "Green Envy RC Boat"
 order = 4
 
 [[resources]]
-src = "fab-work/BELLOWS.jpg"
+src = "b-BELLOWS.jpg"
 [resources.params]
 caption = "Lucien Abigail's Bellows: mechanicals and metal work"
 alt = "Bellows"
@@ -44,49 +51,49 @@ order = 5
 
 
 [[resources]]
-src = "collabs-work/oracle.jpg"
+src = "e-oracle.jpg"
 [resources.params]
 caption = "City of Gods 2025: Programmed/modified analog phone to ring every 30 minutes allowing 'The Oracle' to speak."
 alt = "The Oracle"
 order = 10
 
 [[resources]]
-src = "fab-work/red-sphere.jpg"
+src = "d-red-sphere.jpg"
 [resources.params]
 caption = "Wired and constructed RGB Spheres by Jason Krugman"
 alt = "RGB Spheres"
 order = 20
 
 [[resources]]
-src = "fab-work/straw-mesh.jpg"
+src = "g-straw-mesh.jpg"
 [resources.params]
-caption = "Fabricated LED Mesh, assembled into straw sculpture  by Jason Krugman"
+caption = "Fabricated LED Mesh by Jason Krugman"
 alt = "Installation"
 order = 30
 
 [[resources]]
-src = "install-work/orlando-install.jpg"
+src = "h-orlando-install.jpg"
 [resources.params]
-caption = "On-site Installation of another Jason Krugman piece in Orlando, Florida"
+caption = "Jason Krugman piece in Orlando, Florida"
 alt = "Orlando, Florida"
 order = 40
 
 [[resources]]
-src = "metal-work/img-5.jpg"
+src = "zbroken-geometry.jpg"
 [resources.params]
 caption = "Frame for WIP (Broken Geometry): Welded Steel"
 alt = ""
 order = 50
 
 [[resources]]
-src = "metal-work/img-3.jpg"
+src = "i-LIPS-HAND-CRANK-placeholder.jpg"
 [resources.params]
 caption = "'Lips' wind-powered  kinetic sculpture moquette for grant proposal: Welded steel, found objects."
 alt = ""
 order = 60
 
 [[resources]]
-src = "metal-work/img-6.jpg"
+src = "zbedside-table.jpg"
 [resources.params]
 caption = "Bed-side Table: welded sheet Metal and 3/8 steel rod"
 alt = ""
@@ -100,7 +107,7 @@ alt = ""
 order = 80
 
 [[resources]]
-src = "metal-work/img-9.jpg"
+src = "wave-piece.jpg"
 [resources.params]
 caption = "Wave #1: Welded Sheet Metal + Electronics"
 alt = ""
