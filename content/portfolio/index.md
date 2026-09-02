@@ -4,7 +4,16 @@ description = "A curated selection of projects"
 
 
 [[resources]]
-src = "metal-work/j-mini-foosball.jpg"
+src = "bb-louis-vuitton-runway-frick.jpeg"
+[resources.params]
+caption = "Louis Vuitton runway: The Frick"
+alt = "Louis Vuitton: The Frick"
+order = 1
+
+
+
+[[resources]]
+src = "j-mini-foosball.jpg"
 [resources.params]
 caption = "Mini-foosball out of scrap metal"
 alt = "Mini Foosball"
@@ -18,6 +27,13 @@ caption = "Metal Frames for Dia Beacon: Hague Yang"
 alt = "Dia Beacon: Hague Yang Frames"
 order = 2
 
+
+[[resources]]
+src = "k-wave-machine.gif"
+[resources.params]
+caption = "Fabricated/Designed Wave Machine to test RC Boats"
+alt = "Wave Machine"
+order = 1
 
 
 [[resources]]
@@ -36,14 +52,14 @@ order = 3
 
 
 [[resources]]
-src = "k-wave-machine-placeholder.jpg"
+src = "l-green-envy.jpg"
 [resources.params]
-caption = "Wave Machine for RC Boats"
+caption = "Red Hook Regatta '26: RC Boat Submission"
 alt = "Green Envy RC Boat"
 order = 4
 
 [[resources]]
-src = "b-BELLOWS.jpg"
+src = "b-lucien-abigails-bellows.jpg"
 [resources.params]
 caption = "Lucien Abigail's Bellows: mechanicals and metal work"
 alt = "Bellows"
@@ -74,7 +90,7 @@ order = 30
 [[resources]]
 src = "h-orlando-install.jpg"
 [resources.params]
-caption = "Jason Krugman piece in Orlando, Florida"
+caption = "Jason Krugman Install Orlando, Florida"
 alt = "Orlando, Florida"
 order = 40
 
@@ -86,7 +102,7 @@ alt = ""
 order = 50
 
 [[resources]]
-src = "i-LIPS-HAND-CRANK-placeholder.jpg"
+src = "i-LIPS.gif"
 [resources.params]
 caption = "'Lips' wind-powered  kinetic sculpture moquette for grant proposal: Welded steel, found objects."
 alt = ""
