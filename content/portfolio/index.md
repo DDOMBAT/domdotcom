@@ -83,9 +83,9 @@ order = 20
 [[resources]]
 src = "g-straw-mesh.jpg"
 [resources.params]
-caption = "Fabricated LED Mesh by Jason Krugman"
-alt = "Installation"
-order = 30
+caption = "Jason Krugman wave LED sculpture"
+alt = "LED Wave"
+order = 20
 
 [[resources]]
 src = "h-orlando-install.jpg"
