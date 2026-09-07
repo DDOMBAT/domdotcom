@@ -10,7 +10,26 @@ caption = "Louis Vuitton runway: The Frick"
 alt = "Louis Vuitton: The Frick"
 order = 1
 
+[[resources]]
+src = "i-mig-bike-repair.jpg"
+[resources.params]
+caption = "Bike Frame Repair"
+alt = "Bike Frame Repair"
+order = 1
 
+[[resources]]
+src = "i-kaluminum-frame-job.jpg"
+[resources.params]
+caption = "Terumo BST HQ Aluminum Welding"
+alt = "Aluminum Welding Jig"
+order = 1
+
+[[resources]]
+src = "i-ngreenwood-tiling.jpg"
+[resources.params]
+caption = "Greenwood Cemetary Community Center Tiling"
+alt = "Greenwood Community Center Tiling"
+order = 1
 
 [[resources]]
 src = "j-mini-foosball.jpg"
