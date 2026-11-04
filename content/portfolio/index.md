@@ -11,6 +11,28 @@ alt = "Louis Vuitton: The Frick"
 order = 1
 
 [[resources]]
+src = "c-dia-hague-yang-1.jpg"
+[resources.params]
+caption = "Dia Beacon - Hague Yang: through 2026"
+order = 1
+
+[[resources]]
+src = "c-dia-hague-yang-2.jpg"
+[resources.params]
+caption = "Dia Beacon - Hague Yang: through 2026"
+alt = "Dia Beacon: Hague Yang"
+order = 1
+
+
+[[resources]]
+src = "i-museum-of-mathmatics.jpg"
+[resources.params]
+caption = "'What are the chances?' Museum of Mathmatics: 3D modeling, wiring , C++ programming"
+alt = "What are the chances"
+order = 1
+
+
+[[resources]]
 src = "i-mig-bike-repair.jpg"
 [resources.params]
 caption = "Bike Frame Repair"
