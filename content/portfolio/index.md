@@ -11,9 +11,15 @@ alt = "Louis Vuitton: The Frick"
 order = 1
 
 [[resources]]
-src = "c-dia-beacon-hague-yang.jpg"
+src = "c-dia-hague-yang-1.jpg"
 [resources.params]
-caption = "Dia Beacon: Hague Yang projection mapping installation: Metal work, prototype fabrication"
+caption = "Dia Beacon - Hague Yang: through 2026"
+order = 1
+
+[[resources]]
+src = "c-dia-hague-yang-2.jpg"
+[resources.params]
+caption = "Dia Beacon - Hague Yang: through 2026"
 alt = "Dia Beacon: Hague Yang"
 order = 1
 
